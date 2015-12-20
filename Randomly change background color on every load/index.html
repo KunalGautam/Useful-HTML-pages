@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function()
+			{
+
+				var r =  Math.floor((Math.random() * 255) + 1);
+				var g= Math.floor((Math.random() * 255) + 1);
+				var b = Math.floor((Math.random() * 255) + 1); 
+
+				$("body").css("background",'rgb('+r+','+g+','+b+')');
+				$("h1").css("color",'rgb('+g+','+b+','+r+')');
+			});
+
+	</script>
+</head>
+<body>
+	<h1>This page will have random color with every refresh or load</h1>
+</body>
+</html>
